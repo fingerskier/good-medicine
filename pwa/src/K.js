@@ -7,6 +7,8 @@ export const KEY = {
 export const SCREEN = {
   TABLES: 'tables',
   RECORDS: 'records',
+  BIOJS: 'biojs',
+  SEQVIZ: 'seqviz',
 }
 
 

@@ -22,19 +22,13 @@ export default function Main() {
   
   return <main>
     <Route path='main' element={<Metadata />} />
-    
     <Route path='tables' element={<Tables />} />
-    
     <Route path='table' element={<Generic />} />
-    
     <Route path='members' element={<Members />} />
-    
     <Route path='record' element={<RecordEdit />} />
-    
     <Route path='roles' element={<Roles />} />
-    
     <Route path='users' element={<Users />} />
-    
     <Route path='realms' element={<Realms />} />
+    
   </main>
 }

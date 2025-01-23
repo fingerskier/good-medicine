@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import useLocalStorage from 'hook/useLocalStorage'
-import {KEY} from 'K'
+import {KEY, SCREEN} from 'K'
 
 
 export default function Footer() {
@@ -13,6 +13,8 @@ export default function Footer() {
     <nav>
       <a href='#main'>Home</a>
       <a href='#tables'>Tables</a>
+      
+      {Object.entries(SCREEN).map(([key, value]) => <a key={key} href={`#${value}`}>{value}</a>)}
     </nav>
     
     {editDexieKey?
